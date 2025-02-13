@@ -95,7 +95,7 @@ span {
   font-size: 1.8rem;
   z-index: 10001;
   cursor: pointer;
-  margin-right: 25px;
+  margin-right: 50px;
   background: var(--hover-color);
   border-radius: 3px;
   color: var(--secon-bg-color);
