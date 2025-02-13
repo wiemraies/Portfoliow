@@ -76,7 +76,7 @@ span {
   font-weight: 500;
   padding: 10px 20px;
   animation: slideAnimation 1s ease forwards;
-  animation-delay: calc(.3s * var(--i));
+  animation-delay: calc(0.3s * var(--i));
   opacity: 0;
 }
 .navlist a:hover {
@@ -358,9 +358,6 @@ section {
   font-weight: 600;
 }
 
-
-
-
 /* Services Section CSS */
 .main-text {
   width: 100%;
@@ -443,15 +440,6 @@ section {
   margin: 1rem auto;
   display: block;
 }
-
-
-
-
-
-
-
-
-
 
 /*Skills Section css-------------------------------------------------------------*/
 .skills {
@@ -605,9 +593,6 @@ section {
   animation-delay: calc(var(--i) * 0.05s);
 }
 
-
-
-
 /*portfolio section css--------------------------------------------------------*/
 .filter-buttons {
   margin: 2rem;
@@ -705,8 +690,6 @@ section {
   color: var(--secon-bg-color);
 }
 
-
-
 /*Contact section css-----------------------------------------------*/
 .contact {
   background: var(--secon-bg-color);
@@ -763,33 +746,25 @@ footer a i {
   color: var(--secon-bg-color);
 }
 /*paralax--------------------------------------------------------*/
-.scroll-scale{
+.scroll-scale {
   opacity: 0;
-  transform: scale(.9);
+  transform: scale(0.9);
   transition: all 2s;
 }
-.scroll-bottom{
+.scroll-bottom {
   opacity: 0;
   transform: translateY(300px);
   transition: 3s;
 }
-.scroll-top{
+.scroll-top {
   opacity: 0;
   transform: translateY(-300px);
   transition: 3s;
 }
-.show-items{
+.show-items {
   opacity: 1;
   transform: translateX(0);
 }
-
-
-
-
-
-
-
-
 
 /*keyframes--------------------------------------------------------*/
 @keyframes morph {
@@ -880,7 +855,7 @@ footer a i {
     box-shadow: var(--neon-box-shadow);
   }
 }
-@keyframes slideAnimation{
+@keyframes slideAnimation {
   0% {
     opacity: 0;
     transform: translateY(100px);
@@ -892,7 +867,7 @@ footer a i {
 }
 
 /*Break Points*/
-@media (max-width: 991px) {
+@media (max-width: 420px) {
   header,
   header.sticky {
     padding: 15px 5%;
@@ -948,80 +923,76 @@ footer a i {
   .navlist.open {
     top: 100%;
   }
-  .home{
+  .home {
     grid-template-columns: 1fr;
   }
-  .home-image{
-    margin-bottom: 5rem;   
+  .home-image {
+    margin-bottom: 5rem;
   }
-  .liquid-shape{
+  .liquid-shape {
     width: 80%;
     left: 10%;
     top: 13%;
   }
-  .about{
+  .about {
     flex-direction: column-reverse;
   }
-  .skill-main{
+  .skill-main {
     grid-template-columns: 1fr;
   }
-  .filter-buttons{
+  .filter-buttons {
     margin: 2.5rem 0;
   }
-  footer p{
-    font-size: .8rem;
+  footer p {
+    font-size: 0.8rem;
   }
 }
-@media (max-width: 200px) {
-  html{
+@media (max-width: 420px) {
+  html {
     font-size: 80%;
   }
-  footer p{
-    font-size: .6rem;
+  footer p {
+    font-size: 0.6rem;
   }
-  .filter-buttons .button{
-    font-size: .8rem;
+  .filter-buttons .button {
+    font-size: 0.8rem;
   }
-  .img-about img{
+  .img-about img {
     width: 300px;
   }
-  .info-about1, .info-about2, .info-about3{
+  .info-about1,
+  .info-about2,
+  .info-about3 {
     display: none;
   }
-  .img-about p{
+  .img-about p {
     font-size: 1rem;
   }
-/* Ajuster la grille pour un écran très étroit */
-.section-services {
-  grid-template-columns: 1fr; /* Une seule colonne */
-  gap: 1rem; /* Réduire l'espace entre les badges */
-}
+  /* Ajuster la grille pour un écran très étroit */
+  .section-services {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 1rem; /* Réduire l'espace entre les badges */
+  }
 
-.service-box {
-  padding: 1rem; /* Réduire le padding des cartes */
-}
+  .service-box {
+    padding: 1rem; /* Réduire le padding des cartes */
+  }
 
-.service-btn .btn {
-  font-size: .8rem; /* Ajuster la taille des boutons */
-}
+  .service-btn .btn {
+    font-size: 0.8rem; /* Ajuster la taille des boutons */
+  }
 }
 
 /* Modifier la disposition pour les écrans moyens (jusqu'à 768px) */
 @media (max-width: 768px) {
-.section-services {
-  grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
-}
+  .section-services {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+  }
 }
 
 /* Retour à la disposition en 3 colonnes pour les grands écrans */
 @media (min-width: 769px) {
-.section-services {
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+  .section-services {
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+  }
 }
-}
-
-
-
-
-
-
