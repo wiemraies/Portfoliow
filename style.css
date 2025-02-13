@@ -357,6 +357,10 @@ section {
   font-size: 1rem;
   font-weight: 600;
 }
+
+
+
+
 /* Services Section CSS */
 .main-text {
   width: 100%;
@@ -380,7 +384,7 @@ section {
 
 .section-services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales par défaut */
   gap: 2rem;
   max-width: 1200px;
   margin: 3rem auto; /* Centrer horizontalement et ajouter un espace au-dessus */
@@ -440,47 +444,6 @@ section {
   display: block;
 }
 
-/* Spécifique aux deux cartes de la deuxième ligne */
-.section-services .service-box:nth-child(4),
-.section-services .service-box:nth-child(5) {
-  grid-column: span 1; /* Chaque carte occupe une colonne */
-}
-
-/* Centrer les deux dernières cartes sur la deuxième ligne */
-.section-services .service-box:nth-child(4),
-.section-services .service-box:nth-child(5) {
-  grid-column: span 1;
-  justify-self: center; /* Centrer les deux cartes */
-}
-
-/* Réduire la taille du grid pour s'assurer que les deux derniers éléments sont centrés */
-.section-services .service-box:nth-child(4) {
-  margin-left: auto;
-}
-
-.section-services .service-box:nth-child(5) {
-  margin-right: auto;
-}
-/* Modifier la grille pour la deuxième ligne */
-.section-services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 3rem auto;
-}
-
-/* Positionner la 4ème carte sur la première colonne */
-.section-services .service-box:nth-child(4) {
-  grid-column: 1; /* 4ème carte dans la 1ère colonne */
-  grid-row: 2; /* 4ème carte sur la 2ème ligne */
-}
-
-/* Positionner la 5ème carte sur la troisième colonne */
-.section-services .service-box:nth-child(5) {
-  grid-column: 3; /* 5ème carte dans la 3ème colonne */
-  grid-row: 2; /* 5ème carte sur la 2ème ligne */
-}
 
 
 
@@ -1028,6 +991,33 @@ footer a i {
   .img-about p{
     font-size: 1rem;
   }
+/* Ajuster la grille pour un écran très étroit */
+.section-services {
+  grid-template-columns: 1fr; /* Une seule colonne */
+  gap: 1rem; /* Réduire l'espace entre les badges */
+}
+
+.service-box {
+  padding: 1rem; /* Réduire le padding des cartes */
+}
+
+.service-btn .btn {
+  font-size: .8rem; /* Ajuster la taille des boutons */
+}
+}
+
+/* Modifier la disposition pour les écrans moyens (jusqu'à 768px) */
+@media (max-width: 768px) {
+.section-services {
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+}
+}
+
+/* Retour à la disposition en 3 colonnes pour les grands écrans */
+@media (min-width: 769px) {
+.section-services {
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+}
 }
 
 
