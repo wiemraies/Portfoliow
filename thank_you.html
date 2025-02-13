@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            scroll-behavior: smooth;
+            text-decoration: none;
+        }
+
+        :root {
+            --text-color: #f5f5f5;
+            --hover-color: #12f7ff;
+            --bg-color: #250821;
+            --secon-bg-color: #292e33;
+            --neon-box-shadow: 0 0 0.5rem #12f7ff;
+            --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
+                0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3),
+                0 0 40px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3),
+                0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3),
+                0 0 150px rgba(18, 247, 255, 0.3);
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .thank-you-message {
+            text-align: center;
+            padding: 40px;
+            background: var(--secon-bg-color);
+            border-radius: 8px;
+            box-shadow: var(--neon-box-shadow);
+        }
+
+        .thank-you-message h1 {
+            font-size: 2.5rem;
+            text-shadow: var(--font-neon-text-shadow);
+            color: var(--hover-color);
+        }
+
+        .thank-you-message p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-top: 10px;
+        }
+
+        .thank-you-message a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--hover-color);
+            color: var(--bg-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 4px;
+            box-shadow: var(--neon-box-shadow);
+            transition: 0.4s;
+        }
+
+        .thank-you-message a:hover {
+            background: var(--bg-color);
+            color: var(--hover-color);
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-message">
+        <h1>Thank You!</h1>
+        <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+</html>
