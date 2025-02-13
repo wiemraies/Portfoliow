@@ -867,7 +867,7 @@ footer a i {
 }
 
 /*Break Points*/
-@media (max-width: 420px) {
+@media (max-width: 991px) {
   header,
   header.sticky {
     padding: 15px 5%;
@@ -876,7 +876,7 @@ footer a i {
     padding: 15px 5%;
   }
   section {
-    padding: 50px 5%;
+    padding: 420px 5%;
   }
   .navlist a {
     padding: 8px 15px;
